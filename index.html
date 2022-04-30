@@ -27,6 +27,7 @@
   </head>
 
   <body>
+    <!-- Navbar -->
     <div class="navbar-fixed">
       <nav class="teal">
         <div class="container">
@@ -74,12 +75,63 @@
       </li>
     </ul>
 
+    <!-- Section: Slider -->
+    <section class="slider">
+      <ul class="slides">
+        <li>
+          <img src="img/resort1.jpg" />
+          <div class="caption center-align">
+            <h3>Take Your Dream Vacation</h3>
+            <h5 class="light grey-text text-lighten-3 hide-on-small-only">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima
+              soluta molestias aut. Nobis, quia maiores!
+            </h5>
+          </div>
+        </li>
+        <li>
+          <img src="img/resort2.jpg" />
+          <div class="caption left-align">
+            <h3>We Work With All Budgets</h3>
+            <h5 class="light grey-text text-lighten-3 hide-on-small-only">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima
+              soluta molestias aut. Nobis, quia maiores!
+            </h5>
+          </div>
+        </li>
+        <li>
+          <img src="img/resort3.jpg" />
+          <div class="caption right-align">
+            <h3>Family and Couple Getaways</h3>
+            <h5 class="light grey-text text-lighten-3 hide-on-small-only">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima
+              soluta molestias aut. Nobis, quia maiores!
+            </h5>
+          </div>
+        </li>
+      </ul>
+    </section>
+
     <!--JavaScript at end of body for optimized loading-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
       //Sidenav
-      const sideNav = document.querySelector(".sidenav");
-      M.Sidenav.init(sideNav, {});
+      document.addEventListener("DOMContentLoaded", function () {
+        var sideNav = document.querySelector(".sidenav");
+        var instances = M.Sidenav.init(sideNav, {
+          edge: "left"
+        });
+      });
+
+      //Slider
+      document.addEventListener("DOMContentLoaded", function () {
+        var slider = document.querySelector(".slider");
+        var instances = M.Slider.init(slider, {
+          indicators: false,
+          height: 500,
+          transition: 500,
+          interval: 6000
+        });
+      });
     </script>
   </body>
 </html>

@@ -1,6 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
     <!--Import Google Icon Font-->
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -24,8 +30,6 @@
     <!-- Local css -->
     <link rel="stylesheet" href="css/style.css" />
 
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travelville</title>
   </head>
 
@@ -35,7 +39,7 @@
       <nav class="teal">
         <div class="container">
           <div class="nav-wrapper">
-            <a href="#" class="brand-logo">Travelville </a>
+            <a href="#" class="brand-logo">Travelville</a>
             <a href="#" data-target="mobile-nav" class="sidenav-trigger">
               <i class="material-icons">menu</i>
             </a>
@@ -146,7 +150,7 @@
       document.addEventListener("DOMContentLoaded", function () {
         var sideNav = document.querySelector(".sidenav");
         var instances = M.Sidenav.init(sideNav, {
-          edge: "left"
+          edge: "left",
         });
       });
 
@@ -157,7 +161,7 @@
           indicators: false,
           height: 500,
           transition: 500,
-          interval: 6000
+          interval: 6000,
         });
       });
 
@@ -167,14 +171,14 @@
         var instances = M.Autocomplete.init(ac, {
           data: {
             Aruba: null,
-            Barceloan: null,
+            Barcelona: null,
             Cancun: null,
             Hawaii: null,
             Florida: null,
             California: null,
-            Jamica: null,
-            Europe: null
-          }
+            Jamaica: null,
+            Europe: null,
+          },
         });
       });
     </script>

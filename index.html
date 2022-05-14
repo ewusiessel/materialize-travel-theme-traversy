@@ -399,6 +399,10 @@
       </div>
     </section>
 
+    <!-- Footer -->
+    <footer class="section teal darken-2 white-text center">
+      <p class="flow-text">Traelville &copy; 2022</p>
+    </footer>
     <!--JavaScript at end of body for optimized loading-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
@@ -442,6 +446,12 @@
       document.addEventListener("DOMContentLoaded", function () {
         var gal = document.querySelectorAll(".materialboxed");
         var instances = M.Materialbox.init(gal, {});
+      });
+
+      //ScrollSpy
+      document.addEventListener("DOMContentLoaded", function () {
+        var ss = document.querySelectorAll(".scrollspy");
+        var instances = M.ScrollSpy.init(ss, options);
       });
     </script>
   </body>
